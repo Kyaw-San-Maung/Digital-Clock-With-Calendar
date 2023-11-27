@@ -1,0 +1,26 @@
+body{
+    background: rgb(134, 70, 199);
+    padding: 6% 28%;
+    text-align: center;
+    font-family: 'Caprasimo', cursive; 
+    color:rgb(6, 6, 6);
+}
+.date{
+    padding: 10%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 3px 4px rgb(72, 69, 69); 
+}
+.h1CSS{
+    font-size:3.5rem;
+}
+.date .h2CSS0{
+    font-size: 1.2rem;
+}
+.date .h2CSS1{
+    font-size: 3.2rem;
+}
+.date .h2CSS2{
+    font-size: 1.2rem;
+}

@@ -1,0 +1,78 @@
+When we use command that we have to be care that we are in the right folder.
+-Firstly we have to create package.json file --> npm init or npm init --yes (set author name).
+-For installing --> npm i moment (We will get node_modules with the moment)
+-We need to add "var moment = require("moment")"
+		"var myCoolDate = moment(our js file).format('LLL')"
+
+---> WE will get Error cuz of require 
+---> For solving the error that we have to use browserify
+---> npm install -g browserify
+<--- How we can get our js file as a bundle file --->
+---> browserify ourjsfile.js -o bundle.js
+---> Then we will get our bundle.js file in our folder according our js file.
+---> Then we have to change js file location in HTML file.
+
+<--- For Changing some info for your package.jason --->
+npm config set init-author-name "Freddy"
+npm set init-license "MIT"
+
+<--- For checking some info of your package.jason --->
+npm get init-author-name
+npm config get init-author-name
+
+<--- For removing some info of your package.jason --->
+npm config delete init-author-name
+
+<--- For installing module --->
+lodash dependencies --> js libary 
+npm install lodash --save --> --save is very important!
+
+<--- For installing dev-depedencies --->
+it is used for development, it is not for production
+npm install gulp gulp-sass --save-dev
+
+<--- uninstall or remove dependencies --->
+npm uninstall gulp-sass --save-dev
+npm remove gulp --save-dev
+npm rm lodash --save
+
+<-- update -->
+npm update lodash --save
+
+<-- Global modules install -->
+it will check Nodemonk that it will restarted it.
+npm install -g nodemon
+
+** For checking global module is where ? **
+npm root -g
+
+** For stopping the nodemon and live-server**
+ctrl+C
+
+** For installing live-server **
+-It will allow us to run whatever diretory we are in on our localhost and it will load it up in our browser.
+npm install live-server -g
+
+<-- For removing global module -->
+npm remove -g nodemon
+
+<-- For doing list packages -->
+npm list
+npm list --depth 1
+npm list --depth 2
+
+<-- script object from package.jason -->
+start script ==> we can reused in our command line for running our node index.js
+
+Script {
+  "start" : "node index.js"
+}
+
+cmd --> npm start
+
+Reason for making start script : somone take your applicaiton they may not know or they may not want to see what your main file is they don't wanna go in here and see the main file is index.js because  it could be something else app.js or server.js. That is why npm start is an easy way to start it up without even have to look another reason might change it, we may change index.js to app.js. You can add any script you want.
+
+<--- install live-server locally not globally -->
+npm install live-server --save-dev
+** For running the local live-server that we have to write the cmd line as the following **
+npm run live-server
